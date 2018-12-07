@@ -1,11 +1,11 @@
+//Credit to Andrew Burgess for Calendar init, switchMonth, and createCal functionality.
+//Edited to better suit the needs of the project.
+
 var CALENDAR = function () {
     var wrap, label,
         months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     //Initializes the Calendar
-    
-    
-    
     function init(newWrap) {
         //assign values to label. #label holds data on month and year.
         wrap = $("#calendar");
@@ -19,9 +19,6 @@ var CALENDAR = function () {
 	}
 
     //Switches between the months
-   
-   
-    
     function switchMonth(next, month, year) {
          //splits the label into an array called curr
         var curr = label.text().trim().split(" "), calendar, tempYear = parseInt(curr[1], 10);
